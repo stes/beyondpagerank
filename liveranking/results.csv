@@ -1,0 +1,19 @@
+Time,Team 1,Team 2,Result,Spiel
+0,A,D,0,"Schere,Stein,Papier"
+1,E,B,0,Malen
+2,C,F,0,Tischtennis
+3,C,F,0,Daumen
+4,A,D,0,Bier
+5,E,B,0,Kicker
+6,B,D,0,Tischtennis
+7,D,B,0,Daumen
+8,C,E,0,"Schere,Stein,Papier"
+9,A,F,0,Malen
+10,A,F,0,Kicker
+12,A,E,0,Tischtennis
+13,B,F,0,"Schere,Stein,Papier"
+14,C,D,0,Kicker
+15,A,E,0,Daumen
+16,B,F,0,Bier
+17,C,D,0,Malen
+11,E,C,0,Bier
