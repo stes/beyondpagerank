@@ -1,6 +1,14 @@
 """ Elo and Markov Stationary Live Rankings (Demo Script)
 
-07-01-2017
+Put play results in ``results.csv`` file in the proposed format.
+The ``index.html.tpl`` file is a HTML template containing placeholders
+for inputting the data.
+Graphs are rendered using ``seaborn``/``matplotlib`` and temporarly stored
+as SVGs on disk.
+
+View ``index.html`` in browser for results. Uses Bootstrap.
+
+Created on 07-01-2017
 """
 
 import time
@@ -90,39 +98,35 @@ def markov_stationary(matrix, alpha=0.85, nb_iterations=100):
 
     def update_G(m, I):
         matrix = m.copy()
-        print(matrix)
         idc_zeros = ( matrix.sum(axis=1) == 0 )
-        fill_vals = I + 0.5
+
+        # Different possibilities for fill values when encountering
+        # empty rows in the transition matrix.
+        
+        # fill_vals = I + 0.5
+        fill_vals = np.ones(shape=(nb_teams))
         fill_vals /= fill_vals.sum()
-        matrix[idc_zeros,:] = fill_vals #np.array([0.2] + [0.8/5]*5)
+        matrix[idc_zeros,:] = fill_vals
         matrix = matrix / matrix.sum(axis=1,keepdims=True)
-        print(idc_zeros)
         G = alpha * matrix + (1-alpha)/len(matrix)
         return G
 
     j = 0 
     m = matrix.copy()
+    
+    # Iterative calculation of Eigenvectors 
     while j < nb_iterations  and not np.all(np.isclose(I, I__)):
         G = update_G(matrix, I)
         I__ = I
 
-        # Variant 1: Direct calculation of Eigenvectors
-        vals,vecs = eig(G.T)
-        Ie = np.real(vecs[:,0])
-        Ie /= Ie.sum()
-
-        # Variant 2: Iterative calculation of Eigenvectors 
         i = 0
         while i < nb_iterations and not np.all(np.isclose(I, I_)):
             I_ = I
             I = np.dot(G.T,I)
             i += 1
         j += 1
-
-        #assert(np.allclose(Ie, I)), (Ie, I)
-
-    print("Markov converged after {} iterations".format(j))
-
+        
+    # Assure that I is indeed the stationary distribution of the Markov chain 
     assert np.isclose(I.sum(), 1.)
 
     return I
@@ -131,6 +135,9 @@ def markov_stationary(matrix, alpha=0.85, nb_iterations=100):
 # I/O, HTML Output, Plotting
 
 def write_html(table, elo_scores, total_scores, markov_scores):
+
+    """ Fill placeholders in ``index.html.tpl`` with ranking content
+    """
     
     with open("index.html.tpl", "r") as fp:
         template = fp.read()
@@ -196,7 +203,10 @@ def compute_ranking():
         winner, loser = teams[result], teams[1-result]
 
         matrix[winner, loser] += 1
-        markov_scores = markov_stationary(matrix.copy().T,alpha=0.99)
+        # work around issues with the markov chain when matrix is sparse: compute two rankings for losing and winning
+        # Compute aveage probability either as average or product (kind of a hack, but provides plausible results...) 
+        markov_scores = (markov_stationary(matrix.copy().T,alpha=0.9) + (1 - markov_stationary(matrix.copy(),alpha=0.9)))
+        markov_scores /= markov_scores.sum()
 
         elo_update(elo_scores, winner, loser)
         total_update(total_scores, winner, loser)
