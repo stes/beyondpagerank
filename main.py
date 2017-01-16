@@ -178,7 +178,7 @@ def write_html(table, elo_scores, total_scores, markov_scores):
     points = print_html(total_scores)
     markov = print_html(markov_scores*100)
     
-    with open("index.html", "w") as fp:
+    with open("docs/index.html", "w") as fp:
         fp.write(template.format(time.strftime("%d-%m-%Y %H:%M:%S"), ticker, elo, markov, points))
 
 def plot_history(fname, history):
@@ -215,8 +215,8 @@ def compute_ranking():
         markov_history[t,:] = markov_scores
 
     write_html(table, elo_scores, total_scores, markov_scores)
-    plot_history("elohistory.svg",    elo_history)
-    plot_history("markovhistory.svg", markov_history)
+    plot_history("docs/elohistory.svg",    elo_history)
+    plot_history("docs/markovhistory.svg", markov_history)
 
 def get_teams(table):
     teams = set()

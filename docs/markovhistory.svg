@@ -403,7 +403,7 @@ z
     </g>
    </g>
    <g id="line2d_37">
-    <path clip-path="url(#pfba37de02e)" d="M 65.10625 230.447514 
+    <path clip-path="url(#p9d27a47250)" d="M 65.10625 230.447514 
 L 114.70625 240.768249 
 L 164.30625 248.952254 
 L 213.90625 248.952254 
@@ -424,7 +424,7 @@ L 908.30625 167.801713
 " style="fill:none;stroke:#4c72b0;stroke-linecap:round;stroke-width:2.5;"/>
    </g>
    <g id="line2d_38">
-    <path clip-path="url(#pfba37de02e)" d="M 65.10625 319.888661 
+    <path clip-path="url(#p9d27a47250)" d="M 65.10625 319.888661 
 L 114.70625 399.009073 
 L 164.30625 390.825067 
 L 213.90625 390.825067 
@@ -445,7 +445,7 @@ L 908.30625 454.68469
 " style="fill:none;stroke:#55a868;stroke-linecap:round;stroke-width:2.5;"/>
    </g>
    <g id="line2d_39">
-    <path clip-path="url(#pfba37de02e)" d="M 65.10625 319.888661 
+    <path clip-path="url(#p9d27a47250)" d="M 65.10625 319.888661 
 L 114.70625 319.888661 
 L 164.30625 248.952254 
 L 213.90625 248.952254 
@@ -466,7 +466,7 @@ L 908.30625 246.055223
 " style="fill:none;stroke:#c44e52;stroke-linecap:round;stroke-width:2.5;"/>
    </g>
    <g id="line2d_40">
-    <path clip-path="url(#pfba37de02e)" d="M 65.10625 409.329807 
+    <path clip-path="url(#p9d27a47250)" d="M 65.10625 409.329807 
 L 114.70625 399.009073 
 L 164.30625 390.825067 
 L 213.90625 390.825067 
@@ -487,7 +487,7 @@ L 908.30625 393.722098
 " style="fill:none;stroke:#8172b2;stroke-linecap:round;stroke-width:2.5;"/>
    </g>
    <g id="line2d_41">
-    <path clip-path="url(#pfba37de02e)" d="M 65.10625 319.888661 
+    <path clip-path="url(#p9d27a47250)" d="M 65.10625 319.888661 
 L 114.70625 240.768249 
 L 164.30625 248.952254 
 L 213.90625 248.952254 
@@ -508,7 +508,7 @@ L 908.30625 185.092631
 " style="fill:none;stroke:#ccb974;stroke-linecap:round;stroke-width:2.5;"/>
    </g>
    <g id="line2d_42">
-    <path clip-path="url(#pfba37de02e)" d="M 65.10625 319.888661 
+    <path clip-path="url(#p9d27a47250)" d="M 65.10625 319.888661 
 L 114.70625 319.888661 
 L 164.30625 390.825067 
 L 213.90625 390.825067 
@@ -765,7 +765,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pfba37de02e">
+  <clipPath id="p9d27a47250">
    <rect height="576.0" width="892.8" x="65.10625" y="18.174375"/>
   </clipPath>
  </defs>

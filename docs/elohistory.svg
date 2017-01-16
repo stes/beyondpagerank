@@ -476,7 +476,7 @@ Q 5.03125 9.71875 4.15625 18.75
     </g>
    </g>
    <g id="line2d_35">
-    <path clip-path="url(#p819cbd654c)" d="M 71.785 258.174375 
+    <path clip-path="url(#p061eafacd6)" d="M 71.785 258.174375 
 L 121.385 258.174375 
 L 170.985 258.174375 
 L 220.585 258.174375 
@@ -497,7 +497,7 @@ L 914.985 102.341172
 " style="fill:none;stroke:#4c72b0;stroke-linecap:round;stroke-width:2.5;"/>
    </g>
    <g id="line2d_36">
-    <path clip-path="url(#p819cbd654c)" d="M 71.785 306.174375 
+    <path clip-path="url(#p061eafacd6)" d="M 71.785 306.174375 
 L 121.385 354.174375 
 L 170.985 354.174375 
 L 220.585 354.174375 
@@ -518,7 +518,7 @@ L 914.985 327.430512
 " style="fill:none;stroke:#55a868;stroke-linecap:round;stroke-width:2.5;"/>
    </g>
    <g id="line2d_37">
-    <path clip-path="url(#p819cbd654c)" d="M 71.785 306.174375 
+    <path clip-path="url(#p061eafacd6)" d="M 71.785 306.174375 
 L 121.385 306.174375 
 L 170.985 258.174375 
 L 220.585 223.620615 
@@ -539,7 +539,7 @@ L 914.985 185.304065
 " style="fill:none;stroke:#c44e52;stroke-linecap:round;stroke-width:2.5;"/>
    </g>
    <g id="line2d_38">
-    <path clip-path="url(#p819cbd654c)" d="M 71.785 354.174375 
+    <path clip-path="url(#p061eafacd6)" d="M 71.785 354.174375 
 L 121.385 354.174375 
 L 170.985 354.174375 
 L 220.585 354.174375 
@@ -560,7 +560,7 @@ L 914.985 427.044685
 " style="fill:none;stroke:#8172b2;stroke-linecap:round;stroke-width:2.5;"/>
    </g>
    <g id="line2d_39">
-    <path clip-path="url(#p819cbd654c)" d="M 71.785 306.174375 
+    <path clip-path="url(#p061eafacd6)" d="M 71.785 306.174375 
 L 121.385 258.174375 
 L 170.985 258.174375 
 L 220.585 258.174375 
@@ -581,7 +581,7 @@ L 914.985 284.918238
 " style="fill:none;stroke:#ccb974;stroke-linecap:round;stroke-width:2.5;"/>
    </g>
    <g id="line2d_40">
-    <path clip-path="url(#p819cbd654c)" d="M 71.785 306.174375 
+    <path clip-path="url(#p061eafacd6)" d="M 71.785 306.174375 
 L 121.385 306.174375 
 L 170.985 354.174375 
 L 220.585 388.728135 
@@ -838,7 +838,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p819cbd654c">
+  <clipPath id="p061eafacd6">
    <rect height="576.0" width="892.8" x="71.785" y="18.174375"/>
   </clipPath>
  </defs>
