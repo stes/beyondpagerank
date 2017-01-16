@@ -4,7 +4,7 @@
 
 <head>
     <title>Ranking</title>
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
  
@@ -30,7 +30,7 @@
  
                         <div class="row-fluid">
                             <div class="col-md-8">
-                                <img src="elohistory.svg" height="300px">
+                                <img src="/elohistory.svg" height="300px">
                             </div>
 
                             <div class="col-md-4">
@@ -46,7 +46,7 @@
                         <h4><span class="glyphicon glyphicon-sort-by-order" aria-hidden="true"></span> Markov Verlauf</h4>
                         <div class="row-fluid">
                             <div class="col-md-8">
-                                <img src="markovhistory.svg" height="300px">
+                                <img src="/markovhistory.svg" height="300px">
                             </div>
                             <div class="col-md-4">
                                 {}
